@@ -100,6 +100,7 @@ FRAMEWORK_VERSIONS = [
     {"cuda": "10.1", "tensorflow": "2.2.0", "torch": "1.5.0", "python": "3.8"},
     {"cuda": "10.1", "tensorflow": "2.2.0", "torch": "1.6.0", "python": "3.8"},
     {"cuda": "10.1", "tensorflow": "2.2.0", "torch": "1.7.0", "python": "3.8"},
+    {"cuda": "11.2.1", "cudnn": "8", "tensorflow": "2.5.0", "torch": "1.7.0", "python": "3.8"},
 ]
 
 travis_matrix = []
@@ -132,6 +133,7 @@ for platform, framework_version in itertools.product(PLATFORMS, FRAMEWORK_VERSIO
         "    build:\n",
         "      args:\n",
         "        NEUROPOD_CUDA_VERSION: {}\n".format(framework_version["cuda"]) if is_gpu else "",
+        "        NEUROPOD_CUDNN_VERSION: {}\n".format(framework_version["cudnn"]) if is_gpu and "cudnn" in framework_version else "",
         "        NEUROPOD_TENSORFLOW_VERSION: {}\n".format(tf_version),
         "        NEUROPOD_TORCH_VERSION: {}\n".format(torch_version),
         "        NEUROPOD_PYTHON_VERSION: {}\n".format(py_version),
