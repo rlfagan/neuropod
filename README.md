@@ -1,4 +1,6 @@
 # Neuropod
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frlfagan%2Fneuropod.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frlfagan%2Fneuropod?ref=badge_shield)
+
 
 ## What is Neuropod?
 
@@ -98,3 +100,7 @@ If you have several models that take in a similar set of inputs, you can build a
 See the [basic introduction tutorial](https://neuropod.ai/tutorial/) for an overview of how to get started with Neuropod.
 
 The [Python guide](https://neuropod.ai/pyguide/) and [C++ guide](https://neuropod.ai/cppguide/) go into more detail on running Neuropod models.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frlfagan%2Fneuropod.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frlfagan%2Fneuropod?ref=badge_large)
